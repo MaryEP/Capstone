@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app>
+  
+<head>
+  <title>WorldTides Angular-controller></title>
+  <!---script src = "https://insert origin script here"></script-->
+  <script src = "js/angular-controller.js"></script>
+  <!--link rel="stylesheet" href="css/angular.css"-->
+</head>
+  
+<body>
+
+<table ng-controller="getTideData" id="displayTable">
+  <tr><td>location:</td><td>{{location}}</td></tr>
+  <tr><td>highTide:</td><td>{{HWWT}}</td></tr>
+  <tr><td>highTideTime:</td><td>{{HWWTtime}}</td></tr>
+  <tr><td>lowTide:</td><td>{{LWWT}}</td></tr>
+  <tr><td>lowTideTime:</td><td>{{LWWTtime}}</td></tr>
+  <tr><td>waterTemp:</td><td>{{temp}}</td></tr>
+</table>
+  
+</body>
+</html>

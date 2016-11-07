@@ -1,5 +1,5 @@
 html {
-  background-color: blue;
+  background-color: darkblue;
 }
 
 body {
@@ -13,5 +13,9 @@ body {
 }
 
 h1 {
+  color: white;
+}
+
+p {
   color: white;
 }
