@@ -1,3 +1,4 @@
+//older file
 angular.module(tideData)
    .controller('tideCtrl', function($scope, current, $filter) {
  
@@ -18,3 +19,9 @@ function getTideData($scope) {
   $scope.waterTemp = 'temp';
 }
 });
+
+//function getTideData($scope) {
+  //$scope.location = 'station';
+  //$scope.value = 'find the math.min' and 'math.max'
+  //$scope.time = 'on the math.min, find corresponding beginning date time'
+//}

@@ -1,32 +1,41 @@
-//on click on beachMarker, display the tide data
-function clickbeachMarker() {
+//on click of Marker, display the tide data: High Tide in feet, Low Tide in feet, Time of High Tide, Time of Low Tide
+
+function clickMarker() {
   
+  function getMaxOfArray(highTide) {  
+  return Math.max.apply(null, highTide);
+}
+function getMinOfArray(lowTide) {
+  return Math.min.apply(null, lowTide);
+}
 }
 
 angular.module('markerLocation')
-   .controller('tideCtrl', function($scope, $http, $filter) {
+
+  markerLocation.controller('tideCtrl', function($scope, $http, $filter) {
+    
+    
+    
+    
+    
+    
   $scope.highTideTime = $filter('date')(time(),'HH,mm');
   $scope.lowTideTime = $filter('date')(time(),'HH,mm');
   $scope.location = http.query('station.json')
   });
   
   $scope.location.$promise.then(function(display) {
-  $scope.location = display;
+  $scope.highTide = display;
   })
 
-// on results, "t" = time, "v" = value
-  // how to convert the date/time data to time as: 1:16am LT (local time)
-  // how to convert the value to find highest and lowest
+
   
-//function getTideData($scope) {
-  //$scope.location = 'station';
-  //$scope.value = 'find the math.min' and 'math.max'
-  //$scope.time = 'on the math.min, find corresponding beginning date time'
- 
- // Data wanted:
-  //$scope.highTide = 'HWWT';
-  //$scope.highTideTime = 'HWWTtime';
-  //$scope.lowTide = 'LWWT';
-  //$scope.lowTideTime = 'LWWTtime';
   
-//}
+
+  //  "t" = time, "v" = value
+  //example of data returned is: {"t":"2016-11-10 01:12", "v":"3.977"},
+  
+  
+// highTide {return Math.max(var "v", Math.max));}
+// lowTide {return Math.min(var "v", Math.min));}
+  
