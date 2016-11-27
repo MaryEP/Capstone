@@ -11,15 +11,11 @@
         
         <link rel="stylesheet" media="screen" href="main.css">
         <!--link rel="stylesheet" href="bootstrap.min.css"-->
-        <!--link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"-->
-        <!--link rel="icon" href="/favicon.ico" type="image/x-icon"-->
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+       
+        <!--link rel="apple-touch-icon" href="apple-touch-icon.png"-->
         <!--link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=" rel="stylesheet"-->
-        <script src="https://ajax.googleapi.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <!--script src="https://ajax.googleapi.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script-->
   
-  
-  
- 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,26 +24,8 @@
     <![endif]-->
   </head>
  
-
   <body>
    <div class="container">
-    <!--nav class="navbar navbar-default navbar-fixed-top">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>     
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">HOME</a></li>
-        <li><a href="#other">OTHER</a></li>
-      </ul>
-   
-    </nav>
-     </div-->
-        <!--end of nav bar-->
-    
      </div>
  <div class="world-map">
   <h1>Capstone Project: World Tides</h1>
@@ -56,25 +34,18 @@
     
      <div id="map">
        <div id="title" style="visibility:hidden" onmouseover="show()"></div>
+       <div id ="content"></div>
      </div>
       
- 
-   
-
-
      <footer>
         <h3>Mary Pringle 2016</h3>
       </footer>
    
+    <script src="JS/map2.js"></script>
+    <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5o5N1oPylCD4qMNJJjx4efhwkGUCud0&callback=worldMap"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   
     
-    <!--script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script-->
-    
-    <script src="JS/map.js"></script>
-    <script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5o5N1oPylCD4qMNJJjx4efhwkGUCud0&callback=worldMap">
-   </script>
-    <!--script type="text/javascript" async defer src="http://tidesandcurrents.noaa.gov/api/datagetter?begin_date=20130808 15:00&end_date=20130808 
-                     15:06&station=8454000&product=water_temperature&units=english&time_zone=gmt&application=ports_screen&format=json 
-    </script-->
   </body>
   
 </html>

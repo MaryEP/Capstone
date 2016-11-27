@@ -238,5 +238,5 @@ function worldMap() {
   
       }
 
-//Dakar, Senegal - Latitude:14.764504°
+//add Dakar, Senegal - Latitude:14.764504°
 //Longitude:-17.366029°
