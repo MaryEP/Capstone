@@ -1,5 +1,5 @@
 html {
-  background-color: darkblue;
+  background-color: #000099;
 }
 
 body {
@@ -12,13 +12,9 @@ body {
   background-color: navy;
 }
 
-h1 {
-  color: blue;
-}
-
-h3
-{color: white;
-  
+h1, h2, h4 {
+  color: white;
+  font-family: 'Jura', sans-serif;
 }
 
 p {
@@ -26,11 +22,15 @@ p {
 }
 
 #title {
-  color: white;
-  background-color: black;
+  color: black; 
+  /*white*/
+  /*background-color: black;*/
   font-size: 20px;
   
-    
+}
+.content {
+  color: red; 
+  font-size: 16px;
 }
     
 /*display: none;
